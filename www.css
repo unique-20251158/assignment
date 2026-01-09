@@ -49,3 +49,14 @@ footer{
     float:bottom;
     margin-top: 500px;
 }
+.images {
+    display: grid;
+    grid-template-columns: auto auto auto auto;
+    padding: 15px;
+}
+
+.image {
+    border: 2px solid black;
+    height: 200px;
+    margin:20px;
+}
