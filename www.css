@@ -1,7 +1,5 @@
 body{
-    background-color:beige;
-    height:100%;
-    width:100%;
+    font-family: Arial, Helvetica, sans-serif;
 }
 header {
     background-color: brown;
@@ -49,6 +47,7 @@ footer{
     float:bottom;
     margin-top: 500px;
 }
+/*css for project page*/
 .images {
     display: grid;
     grid-template-columns: auto auto auto auto;
@@ -59,4 +58,80 @@ footer{
     border: 2px solid black;
     height: 200px;
     margin:20px;
+}
+
+/*css for contact form page*/
+* {
+    margin: 0;
+    padding: 0;
+}
+
+.box {
+    width: 600px;
+    height: 750px;
+    background-color: white;
+    border: 2px solid black;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 50px;
+}
+
+.contact {
+    padding: 30px;
+    color: black;
+    font-size: 36px;
+    font-weight: bold;
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.label {
+    color: black;
+    font-weight: bold;
+    margin-left: 20px;
+    margin-bottom: 10px;
+    margin-right: 20px;
+    clear: both;
+}
+
+.name {
+    display: flex;
+    margin-bottom: 15px;
+    margin-right: 20px;
+}
+
+input {
+    width: 48%;
+    padding: 15px;
+    margin-left: 20px;
+    margin-bottom: 15px;
+    margin-right: 20px;
+}
+
+.submit input {
+    background-color: black;
+    color: white;
+    padding: 20px;
+    width: 30%;
+    border-radius: 60px;
+    margin-left: 190px;
+    margin-top: 30px;
+    font-size: 16px;
+}
+
+.submit input:hover {
+    background-color: white;
+    color:black;
+}
+.gender {
+    display: flex;
+    flex-direction: column;
+}
+
+.gender label {
+    display: flex;
+    width:10%;
+}
+input[name="email"],input[name="number"] {
+    width: 85%;
 }
