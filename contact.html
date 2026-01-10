@@ -3,5 +3,33 @@
 <head>
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="www.css">
+    <title>Contact Form</title>
 </head>
-<body><header>
+<body>
+    <div class="bg">
+        <div class="box">
+            <div class="contact">Contact Form</div>
+            <form>
+                <div class="label">YOUR NAME *</div>
+                <div class="name">
+                    <input type="text" name="First-name" placeholder="First name" required>
+                    <input type="text" name="Last-name" placeholder="Last name" required>
+                </div>
+                <div class="label">EMAIL ADDRESS *</div>
+                <input type="email" name="email" placeholder="eg:xxxxx@gmail.com" required>
+                <div class="label">PHONE NUMBER *</div>
+                <input type="text" name="number" placeholder="+977 XXXXXXXXXX" required>
+                <div class="label">GENDER *</div>
+                <div class="gender">
+                    <label><input type="radio" name="gender" value="male" checked>Male</label><br>
+                    <label><input type="radio" name="gender" value="female">Female</label><br>
+                    <label><input type="radio" name="gender" value="other">Other</label>
+                </div>
+                <div class="submit">
+                    <input type="button" onclick="alert('Your response has been recorder')"value="Submit">
+                </div>
+            </form>
+        </div>
+    </div>
+</body>
+</html>
