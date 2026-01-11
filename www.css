@@ -1,137 +1,191 @@
-body{
-    font-family: Arial, Helvetica, sans-serif;
-}
-header {
-    background-color: brown;
-    padding: 60px;
+
+body {
     font-family: Arial;
+    background-color: white;
+    color: #333;
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+}
+
+header {
+    background-color: #1e40af;
+    padding: 40px;
 }
 
 ul {
     display: flex;
     justify-content: center;
     list-style: none;
-}
+    }
 
 li {
-    margin: 0 10px;
+    margin: 0 18px;
 }
 
-li a{
-    background-color:brown;
+li a {
+    display: block;
     color: white;
-    padding: 15px;
+    padding: 20px 35px;
     text-decoration: none;
-    font-size:20px;
-    border:solid wheat 2px;
-    border-radius: 10%;
+    font-size: 22px;
+    font-weight: bold;
 }
-li a:hover {
-    background-color: chocolate;
+nav li a:hover {
+    background-color: #1e293b;
 }
-.name{
-    text-align: center;
-    font-size: 60px;
-    margin-top: 10px;
+.pic {
+    width: 260px;
+    height: 260px;
+    background-color: #1e40af;
+    border: 3px solid #1e293b;
+    flex-shrink: 0;
 }
-.intro{
-    margin-top:30px;
-    font-size:25px;
-    text-align: center;
-}
-footer{
-    background-color: black;
-    color:white ;
-    text-align: center;
-    padding: 20px;
-    float:bottom;
-    margin-top: 500px;
-}
-/*css for project page*/
-.images {
-    display: grid;
-    grid-template-columns: auto auto auto auto;
-    padding: 15px;
+.imgfit {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    margin: 60px 40px;
+    gap:20px;
 }
 
-.image {
-    border: 2px solid black;
+.line {
+    height: 3px;
+    background: #1e40af;
+    margin: 10px;
+}
+.hobbies {
+    margin: 40px;
+}
+.hobbies h2 {
+    font-size: 35px;
+    margin-bottom: 15px;
+}
+.photos {
+    display: flex;
+    gap: 20px;
+}
+.photos div{
+    width: 200px;
     height: 200px;
-    margin:20px;
+    border: 2px dashed blue;
 }
-
-/*css for contact form page*/
-* {
-    margin: 0;
-    padding: 0;
+.photos div img {
+    width: 100%;
+    height: 100%;
+    object-fit: fill;
 }
-
-.box {
-    width: 600px;
-    height: 750px;
-    background-color: white;
-    border: 2px solid black;
-    margin-left: auto;
-    margin-right: auto;
-    margin-top: 50px;
+.pic img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    display: block;
 }
-
-.contact {
-    padding: 30px;
-    color: black;
-    font-size: 36px;
-    font-weight: bold;
-    text-align: center;
-    margin-bottom: 20px;
-}
-
-.label {
-    color: black;
-    font-weight: bold;
-    margin-left: 20px;
-    margin-bottom: 10px;
-    margin-right: 20px;
-    clear: both;
+.introduction {
+    max-width:700px;
 }
 
 .name {
-    display: flex;
-    margin-bottom: 15px;
-    margin-right: 20px;
+    font-size: 60px;
+    color: #1e293b;
+    margin-top: 15px;
 }
 
-input {
-    width: 48%;
-    padding: 15px;
-    margin-left: 20px;
-    margin-bottom: 15px;
-    margin-right: 20px;
+.intro {
+    font-size: 20px;
+    color: #666;
+    margin-top: 20px;
 }
+    /*css for project page*/
+    .images {
+        display: grid;
+        grid-template-columns: auto auto auto auto;
+        padding: 15px;
+    }
 
-.submit input {
-    background-color: black;
-    color: white;
-    padding: 20px;
-    width: 30%;
-    border-radius: 60px;
-    margin-left: 190px;
-    margin-top: 30px;
-    font-size: 16px;
-}
+    .image {
+        border: 2px solid black;
+        height: 200px;
+        margin:20px;
+    }
 
-.submit input:hover {
-    background-color: white;
-    color:black;
-}
-.gender {
-    display: flex;
-    flex-direction: column;
-}
+    /*css for contact form page*/
+    body.contact{
 
-.gender label {
-    display: flex;
-    width:10%;
-}
-input[name="email"],input[name="number"] {
-    width: 85%;
-}
+    }
+    * {
+        margin: 0;
+        padding: 0;
+    }
+
+    .box {
+        width: 600px;
+        height: 750px;
+        background-color: white;
+        border: 2px solid black;
+        margin-left: auto;
+        margin-right: auto;
+        margin-top: 50px;
+    }
+
+    .contact {
+        padding: 30px;
+        color: black;
+        font-size: 36px;
+        font-weight: bold;
+        text-align: center;
+        margin-bottom: 20px;
+    }
+
+    .label {
+        color: black;
+        font-weight: bold;
+        margin-left: 20px;
+        margin-bottom: 10px;
+        margin-right: 20px;
+        clear: both;
+    }
+
+    .name {
+        display: flex;
+        margin-bottom: 15px;
+        margin-right: 20px;
+    }
+
+    input {
+        width: 48%;
+        padding: 15px;
+        margin-left: 20px;
+        margin-bottom: 15px;
+        margin-right: 20px;
+    }
+
+    .submit input {
+        background-color: black;
+        color: white;
+        padding: 20px;
+        width: 30%;
+        border-radius: 60px;
+        margin-left: 190px;
+        margin-top: 30px;
+        font-size: 16px;
+    }
+
+    .submit input:hover {
+        background-color: white;
+        color:black;
+    }
+    .gender {
+        display: flex;
+        flex-direction: column;
+        font-size: 20px;
+        font-weight: bold;
+    }
+
+    .gender label {
+        display: flex;
+        width:10%;
+    }
+    input[name="email"],input[name="number"] {
+        width: 85%;
+    }
