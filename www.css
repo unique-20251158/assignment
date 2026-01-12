@@ -1,4 +1,3 @@
-
 body {
     font-family: Arial;
     background-color: white;
@@ -7,22 +6,18 @@ body {
     flex-direction: column;
     min-height: 100vh;
 }
-
 header {
     background-color: #1e40af;
     padding: 40px;
 }
-
 ul {
     display: flex;
     justify-content: center;
     list-style: none;
     }
-
-li {
+    li {
     margin: 0 18px;
 }
-
 li a {
     display: block;
     color: white;
@@ -84,40 +79,154 @@ nav li a:hover {
 .introduction {
     max-width:700px;
 }
-
 .name {
     font-size: 60px;
     color: #1e293b;
     margin-top: 15px;
 }
-
 .intro {
     font-size: 20px;
     color: #666;
     margin-top: 20px;
 }
-    /*css for project page*/
-    .images {
-        display: grid;
-        grid-template-columns: auto auto auto auto;
+
+@media (max-width: 480px) {
+    .imgfit {
+    margin: 20px 15px;
+    flex-direction: column;
+    text-align: center;
+}
+    .pic {
+    width: 160px;
+    height: 160px;
+}
+    .introduction .name {
+    font-size: 32px;
+}
+    .intro {
+    font-size: 16px;
+    }
+.hobbies h2 {
+    font-size: 24px;
+}
+    .photos {
+    flex-direction: column;
+    align-items: center;
+}
+    .photos div {
+    width: 80%;
+    height: 180px;
+}
+    ul {
+    flex-direction: column;
+    align-items: center;
+}
+    li {
+    margin: 5px 0;
+}
+    li a {
+    padding: 10px 20px;
+    font-size: 14px;
+}
+    .vid {
+    font-size: 24px;
+}
+    .link {
+    padding: 0 10px;
+}
+    .link iframe {
+    height: 200px;
+}
+}
+
+/*css for project page*/
+.titles {
+    font-size: 42px;
+    font-weight: bold;
+    font-style: italic;
+    text-align: center;
+    color: #1e293b;
+    margin-top: 40px;
+}
+.lined {
+    height: 3px;
+    background-color: #1e40af;
+    margin: 20px 40px;
+}
+.card {
+    border: 2px solid #1e40af;
+    margin: 20px 100px;
+    padding: 20px;
+}
+.images {
+    display: grid;
+    grid-template-columns: auto auto;
+    gap: 10px;
+}
+.image {
+    height: 150px;
+    border: 2px solid #1e293b;
+    background-color: #ddd;
+}
+.image img {
+    width: 100%;
+    height: 100%;
+    object-fit: fill;
+}
+.learn {
+    margin-top: 20px;
+    padding: 15px;
+    background-color: #1e293b;
+}
+.topic {
+    font-size: 24px;
+    font-weight: bold;
+    color: white;
+    margin-bottom: 10px;
+}
+.detail {
+    font-size: 16px;
+    color: white;
+    margin-bottom: 8px;
+}
+.conc {
+    font-size: 14px;
+    color: white;
+}
+@media (max-width: 480px) {
+    .titles {
+        font-size: 28px;
+        margin-top: 20px;
+}
+    .lined {
+        margin: 15px 20px;
+}
+    .card {
+        margin: 15px 15px;
         padding: 15px;
-    }
-
+}
+    .images {
+        grid-template-columns: 1fr;
+        gap: 15px;
+}
     .image {
-        border: 2px solid black;
-        height: 200px;
-        margin:20px;
-    }
-
+        height: 180px;
+}
+    .topic {
+        font-size: 20px;
+}
+    .detail {
+        font-size: 14px;
+}
+    .conc {
+        font-size: 13px;
+}
+}
     /*css for contact form page*/
-    body.contact{
-
-    }
     * {
         margin: 0;
         padding: 0;
     }
-
     .box {
         width: 600px;
         height: 750px;
@@ -127,7 +236,6 @@ nav li a:hover {
         margin-right: auto;
         margin-top: 50px;
     }
-
     .contact {
         padding: 30px;
         color: black;
@@ -136,7 +244,6 @@ nav li a:hover {
         text-align: center;
         margin-bottom: 20px;
     }
-
     .label {
         color: black;
         font-weight: bold;
@@ -145,13 +252,11 @@ nav li a:hover {
         margin-right: 20px;
         clear: both;
     }
-
     .name {
         display: flex;
         margin-bottom: 15px;
         margin-right: 20px;
     }
-
     input {
         width: 48%;
         padding: 15px;
@@ -159,7 +264,6 @@ nav li a:hover {
         margin-bottom: 15px;
         margin-right: 20px;
     }
-
     .submit input {
         background-color: black;
         color: white;
@@ -170,7 +274,6 @@ nav li a:hover {
         margin-top: 30px;
         font-size: 16px;
     }
-
     .submit input:hover {
         background-color: white;
         color:black;
@@ -181,7 +284,6 @@ nav li a:hover {
         font-size: 20px;
         font-weight: bold;
     }
-
     .gender label {
         display: flex;
         width:10%;
@@ -189,3 +291,136 @@ nav li a:hover {
     input[name="email"],input[name="number"] {
         width: 85%;
     }
+
+@media (max-width: 480px){
+    .box {
+    width: 95%;
+    margin-top: 20px;
+    height: auto;
+    padding-bottom: 30px;
+}
+    .contact {
+    font-size: 24px;
+    padding: 15px;
+    margin-bottom: 10px;
+    }
+    .label {
+    font-size: 14px;
+    margin-left: 15px;
+}
+    input {
+    padding: 12px;
+    margin-left: 15px;
+    margin-right: 15px;
+}
+    .name {
+    flex-direction: column;
+}
+    .name input,
+    input[name="email"],
+    input[name="number"] {
+    width: 90%;
+}
+    .submit input {
+    width: 60%;
+    padding: 15px;
+    font-size: 14px;
+    margin-left: auto;
+    margin-right: auto;
+    display: block;
+}
+    .gender {
+    font-size: 16px;
+    margin-left: 15px;
+}
+}
+
+/*video demo css*/
+.vid {
+    font-size: 42px;
+    font-weight: bold;
+    text-align: center;
+    color: #1e293b;
+    margin-top: 40px;
+    margin-bottom: 10px;
+}
+.look {
+    width: 120px;
+    height: 4px;
+    background-color: #1e40af;
+    margin: 0 auto 30px auto;
+}
+.link {
+    max-width: 800px;
+    margin: 0 auto;
+    padding: 0 20px;
+}
+.link iframe {
+    width: 100%;
+    height: 450px;
+    border: 3px solid #1e40af;
+}
+.youtube {
+    text-align: center;
+    margin: 30px auto;
+    padding: 15px 20px;
+    border: 2px solid #1e40af;
+    border-radius: 8px;
+    max-width: 300px;
+}
+.youtube a {
+    color: #1e40af;
+    font-weight: bold;
+    text-decoration: none;
+}
+.youtube a:hover {
+    text-decoration: underline;
+}
+
+/*css for report page*/
+.heads {
+    max-width: 900px;
+    margin: 0 auto;
+    padding: 40px 20px;
+}
+.title {
+    font-size: 42px;
+    font-weight: bold;
+    text-align: center;
+    color: #1e293b;
+    margin-bottom: 10px;
+}
+.designline {
+    width: 120px;
+    height: 4px;
+    background-color: #1e40af;
+    margin: 0 auto 40px auto;
+}
+.paragraphs {
+    margin-bottom: 35px;
+}
+.heading {
+    font-size: 26px;
+    color: #1e40af;
+    font-weight: bold;
+    margin-bottom: 15px;
+}
+.content {
+    font-size: 18px;
+    line-height: 1.8;
+    color: #444;
+    margin-bottom: 15px;
+    text-align: justify;
+}
+@media (max-width: 480px) {
+    .title {
+    font-size: 26px;
+}
+    .heading {
+    font-size: 20px;
+}
+    .content {
+    font-size: 15px;
+    line-height: 1.6;
+    }
+}
